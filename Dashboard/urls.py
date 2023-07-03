@@ -9,7 +9,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('user.urls')),
-    path('Home/', include('Interface.urls')),    
+    path('Home/', include('Interface.urls')),  
+    path('Dect/', include('Detect.urls')),
 ]
 
 
