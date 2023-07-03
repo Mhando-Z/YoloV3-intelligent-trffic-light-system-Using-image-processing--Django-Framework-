@@ -1,0 +1,155 @@
+{% extends "pages/index.html" %}
+{% load static %}
+{% block content %}
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  </head>
+
+  <body>
+
+    <main id="main" class="main">
+
+      <div class="pagetitle">
+        <h1>ILALA</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href=""></a></li>
+            <li class="breadcrumb-item"></li>
+            <li class="breadcrumb-item "></li>
+          </ol>
+        </nav>
+      </div>
+
+
+
+      <!-- ROW 1 -->
+
+      <section class="section">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-1">
+            <div class="">
+              <div class="container">
+                <div class="circle red" color="red"></div>
+                <div class="circle" color="yellow"></div>
+                <div class="circle" color="green"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <img src="{% url 'live_feed' %}" class="img-fluid  rounded mx-auto d-block" alt="">
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+          <!--col-->
+
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <img src="{% url 'live_feed' %}" class="img-fluid  rounded mx-auto d-block" alt="">
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-1">
+            <div class="">
+              <div class="container">
+                <div class="circle red" color="red"></div>
+                <div class="circle" color="yellow"></div>
+                <div class="circle" color="green"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--END ROW 1 -->
+          <!-- ROW 2 -->
+          <div class="row align-items-top">
+            <div class="col-lg-1">
+              <div class="">
+                <div class="container">
+                  <div class="circle red" color="red"></div>
+                  <div class="circle" color="yellow"></div>
+                  <div class="circle" color="green"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <img src="{% url 'live_feed' %}" class="img-fluid  rounded mx-auto d-block" alt="">
+                </div>
+                <div class="card-footer">
+                  Footer
+                </div>
+              </div>
+            </div>
+
+            <!-- COL -->
+
+
+            <div class="col-lg-5">
+              <div class="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <img src="{% url 'live_feed' %}" class="img-fluid  rounded mx-auto d-block" alt="">
+                </div>
+                <div class="card-footer">
+                  Footer
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1">
+              <div class="">
+                <div class="container">
+                  <div class="circle red" color="red"></div>
+                  <div class="circle" color="yellow"></div>
+                  <div class="circle" color="green"></div>
+                </div>
+              </div>
+            </div>
+
+
+
+      </section>
+
+    </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+    <script src="" async defer></script>
+    <script src=" {% static 'js/Js.js' %}"></script>
+  </body>
+
+</html>
+
+
+{% endblock  %}

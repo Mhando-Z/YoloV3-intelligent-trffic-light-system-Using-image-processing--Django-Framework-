@@ -1,0 +1,376 @@
+{% extends "pages/index.html" %}
+{% load static %}
+{% block content %}
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <main id="main" class="main">
+
+            <div class="pagetitle">
+                <h1>REPORTS</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="">Home</a></li>
+                        <li class="breadcrumb-item">Components</li>
+                        <li class="breadcrumb-item ">Cards</li>
+                    </ol>
+                </nav>
+            </div>
+
+
+
+            <!-- ROW 1 -->
+
+            <section class="section">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Week-Days</h5>
+
+                            <!-- Vertical Pills Tabs -->
+                            <div class="d-flex align-items-start">
+                                <div class="nav flex-column justify-content-start nav-pills me-3" id="v-pills-tab"
+                                    role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">Monday</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">Tuesday</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Wednesday</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Thursday</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Friday</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Saturday</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Sunday</button>
+                                </div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <div class="row">
+                                            <div class="col d-flex flex-row ">
+                                                <ul class="sidebar-nav d-flex flex-row justify-content-between"
+                                                    id="sidebar-nav">
+                                                    <!-- <li class="nav-item">
+                                                        <a class="nav-link" href="index.html">
+                                                            <i class="bi bi-grid"></i>
+                                                            <span>LOCATIONS</span>
+                                                        </a>
+                                                    </li> -->
+
+                                                    <!-- End Dashboard Nav -->
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  collapsed" data-bs-target="#Ilala-nav"
+                                                            data-bs-toggle="collapse" href="#">
+                                                            <i class="bi bi-menu-button-wide"></i><span>ILALA</span><i
+                                                                class="bi bi-chevron-down ms-auto"></i>
+                                                        </a>
+                                                        <ul id="Ilala-nav" class="nav-content collapse"
+                                                            data-bs-parent="#sidebar-nav">
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="">
+                                                                    <i class="bi bi-circle"></i><span>street 2</span>
+                                                                </a>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </li>
+                                                    <!-- End of ILALA Nav -->
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link collapsed" data-bs-target="#Temeke-nav"
+                                                            data-bs-toggle="collapse" href="#">
+                                                            <i class="bi bi-menu-button-wide"></i><span>TEMEKE</span><i
+                                                                class="bi bi-chevron-down ms-auto"></i>
+                                                        </a>
+                                                        <ul id="Temeke-nav" class="nav-content collapse"
+                                                            data-bs-parent="#sidebar-nav">
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 2</span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <!-- End of TEMEKE Nav -->
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link collapsed" data-bs-target="#Kinondoni-nav"
+                                                            data-bs-toggle="collapse" href="#">
+                                                            <i
+                                                                class="bi bi-menu-button-wide"></i><span>KINONDONI</span><i
+                                                                class="bi bi-chevron-down ms-auto"></i>
+                                                        </a>
+                                                        <ul id="Kinondoni-nav" class="nav-content collapse"
+                                                            data-bs-parent="#sidebar-nav">
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 2</span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <!-- End Tables Nav -->
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link collapsed" data-bs-target="#Ubungo-nav"
+                                                            data-bs-toggle="collapse" href="#">
+                                                            <i class="bi bi-menu-button-wide"></i><span>UBUNGO</span><i
+                                                                class="bi bi-chevron-down ms-auto"></i>
+                                                        </a>
+                                                        <ul id="Ubungo-nav" class="nav-content collapse"
+                                                            data-bs-parent="#sidebar-nav">
+                                                            <li>
+                                                                <a href="###">
+                                                                    <i class="bi bi-circle"></i><span>street 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="###">
+                                                                    <i class="bi bi-circle"></i><span>street 2</span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <!-- End Charts Nav -->
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link collapsed" data-bs-target="#Kigamboni-nav"
+                                                            data-bs-toggle="collapse" href="#">
+                                                            <i
+                                                                class="bi bi-menu-button-wide"></i><span>KIGAMBONI</span><i
+                                                                class="bi bi-chevron-down ms-auto"></i>
+                                                        </a>
+                                                        <ul id="Kigamboni-nav" class="nav-content collapse"
+                                                            data-bs-parent="#sidebar-nav">
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="##">
+                                                                    <i class="bi bi-circle"></i><span>street 2</span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                </ul>
+
+                                            </div>
+                                            <div class="container pt-2">
+                                                <div class="row">
+                                                    <div class="col-4-lg card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Recorded data</h5>
+                                                            <!-- Table with hoverable rows -->
+                                                            <table class="table table-hover">
+                                                                <thead class="text-center">
+                                                                    <tr>
+                                                                        <th scope="col"></th>
+                                                                        <th scope="col">Morning</th>
+                                                                        <th scope="col">Afternoon</th>
+                                                                        <th scope="col">Evening</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="text-center">
+                                                                    <tr>
+                                                                        <th scope="row">Total vehicles</th>
+                                                                        <td>58</td>
+                                                                        <td>78</td>
+                                                                        <td>28</td>
+                                                                    </tr>
+
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-4-lg d-flex flex-column justify-content-center">
+                                                        <h5 class="text-center"><b>Description</b></h5>
+                                                        <p class="text-center">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Facere sint, minus ducimus error similique aspernatur iste
+                                                            maxime asperiores sequi praesentium nostrum culpa
+                                                            accusantium deleniti ea quae placeat pariatur nulla
+                                                            consequatur.
+                                                        </p>
+
+                                                    </div>
+                                                    <div class="col-4-lg">
+                                                        <h5 class="label">Chart Type</h5>
+                                                        <select name="chartType" id="chartType"
+                                                            onchange="updateChartType()">
+                                                            <option value="line">Line</option>
+                                                            <option value="bar">Bar</option>
+                                                            <option value="radar">Radar</option>
+                                                            <option value="polarArea">Polar Area</option>
+                                                            <option value="doughnut">Doughnut</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4-lg">
+                                                        <div class="card shadow">
+                                                            <div class="card-body">
+                                                                <!-- Bar Chart -->
+                                                                <canvas id="barChart"
+                                                                    style="max-height: 400px"></canvas>
+                                                                 <script>
+                                                                    document.addEventListener("DOMContentLoaded",
+                                                                    () => {
+                                                                        new Chart(document.querySelector(
+                                                                            '#barChart'), {
+                                                                            type: 'bar',
+                                                                            data: {
+                                                                                labels: ['January',
+                                                                                    'February',
+                                                                                    'March',
+                                                                                    'April',
+                                                                                    'May', 'June',
+                                                                                    'July'
+                                                                                ],
+                                                                                datasets: [{
+                                                                                    label: 'Bar Chart',
+                                                                                    data: [65,
+                                                                                        59,
+                                                                                        80,
+                                                                                        81,
+                                                                                        56,
+                                                                                        55,
+                                                                                        40
+                                                                                    ],
+                                                                                    backgroundColor: [
+                                                                                        'rgba(255, 99, 132, 0.2)',
+                                                                                        'rgba(255, 159, 64, 0.2)',
+                                                                                        'rgba(255, 205, 86, 0.2)',
+                                                                                        'rgba(75, 192, 192, 0.2)',
+                                                                                        'rgba(54, 162, 235, 0.2)',
+                                                                                        'rgba(153, 102, 255, 0.2)',
+                                                                                        'rgba(201, 203, 207, 0.2)'
+                                                                                    ],
+                                                                                    borderColor: [
+                                                                                        'rgb(255, 99, 132)',
+                                                                                        'rgb(255, 159, 64)',
+                                                                                        'rgb(255, 205, 86)',
+                                                                                        'rgb(75, 192, 192)',
+                                                                                        'rgb(54, 162, 235)',
+                                                                                        'rgb(153, 102, 255)',
+                                                                                        'rgb(201, 203, 207)'
+                                                                                    ],
+                                                                                    borderWidth: 1
+                                                                                }]
+                                                                            },
+                                                                            options: {
+                                                                                scales: {
+                                                                                    y: {
+                                                                                        beginAtZero: true
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        });
+                                                                    });
+                                                                    //function that runs on chart type select
+                                                                    function updateChartType() {                                                                    
+                                                                    myChart.destroy();
+                                                                    myChart = new Chart(ctx, {
+                                                                    type: document.getElementById("chartType").value,
+                                                                    data: myData,
+                                                                    });
+                                                                    };
+                                                                </script>
+                                                               
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                        aria-labelledby="v-pills-messages-tab">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Vertical Pills Tabs -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+        </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+        <script src="" async defer></script>
+        <script src=" {% static 'js/Js.js' %}"></script>
+    </body>
+
+</html>
+
+
+{% endblock  %}
