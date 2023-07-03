@@ -1,0 +1,101 @@
+{% extends "pages/index.html" %}
+{% load static %}
+{% block content %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  </head>
+
+  <body>
+    <main id="main" class="main">
+      <div class="pagetitle pb-4">
+        
+      <!-- ROW 1 -->
+      <section class="section pl-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-1">            
+          </div>
+
+          <div class="col-lg-10">
+            <div class="card text-center">
+              <div class="card-header"></div> 
+              <h style="font-weight: bold; 
+                font-size: 2.5rem;
+
+                font-family: 
+                'Arial', sans-serif;">
+                Intelligent Traffic Light System Using Image Processing 
+              </h1>
+
+
+                <h1 style="font-size: 1.5rem;">This System Dashboard is integrated with Yolov3 Ai model</h1><br>
+                <img src="{% static 'images/yologo_2.png'%}" class="img-fluid  rounded mx-auto d-block" width='400' height='80' alt=""><br>
+                
+                {% for profiles in profiles %}
+                <h1><b>Hello {{profiles.Full_name}} Welcome,</b> <br>
+                {%endfor%} 
+                
+                <div class="">
+                    <p>This system will help you in managing traffic lights <br> and also it can detect the number of cars
+                      passing
+                      using OpenCV and Python</p>
+                </div>
+                         
+              
+            </div>
+          </div>       
+          <div class="col-lg-1">
+          </div>
+
+        
+          <!--END ROW 1 -->
+          <!-- ROW 2 -->
+          <div class="row align-items-top">
+            <div class="col-lg-1">
+              <div class="">
+                <div class="container">
+                  <div class="circle red" color="red"></div>
+                  <div class="circle" color="yellow"></div>
+                  <div class="circle" color="green"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="card">
+                <div class="card-header" style="font-weight:f; 
+                font-size: 1.4rem;
+                color:rgb(75, 46, 136);
+                font-family: 
+                'Arial', sans-serif;">
+                  <b> Simulation Preview</b>
+                </div>
+                <div class="card-body">
+                  <img src="{% static 'images/Demo.gif'%}" class="img-fluid  rounded mx-auto d-block" width="1000" alt="">
+                </div>
+                <div class="card-footer">                  
+                </div>
+              </div>
+            </div>
+
+            <!-- COL -->           
+
+            <div class="col-lg-1">            
+            </div>
+      </section>
+
+    </main><!-- End #main -->
+
+    <script src="" async defer></script>
+    <script src=" {% static 'js/Js.js' %}"></script>
+  </body>
+
+</html>
+
+
+{% endblock  %} -->

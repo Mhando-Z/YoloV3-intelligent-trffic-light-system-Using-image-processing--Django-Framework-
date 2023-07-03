@@ -14,6 +14,14 @@ from django.contrib.auth.decorators import login_required
 from user.models import Profile as Profiles
 
 
+@login_required(login_url='Login')
+def intro(request):
+    profiles = Profiles.objects.all()
+    context = {
+        "profiles": profiles,
+    }
+    return render(request, 'pages/intropage.html', context)
+
 
 @login_required(login_url='Login')
 def Home(request):
@@ -31,6 +39,7 @@ def Site(request):
         "profiles":profiles,
     }
     return render(request, 'pages/site.html', context)
+
 
 
 @login_required(login_url="Login")
